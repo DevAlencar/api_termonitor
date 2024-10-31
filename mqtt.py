@@ -44,6 +44,7 @@ def mqtt_thread():
             print('valores inseridos: ')
             print(obj_value)
             print(env_value)
+            data.clear()
         except IndexError:
             print("Nenhum dado novo")
             env_value = None

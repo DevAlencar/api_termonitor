@@ -42,7 +42,7 @@ class Data(BaseHTTPRequestHandler):
 
 
 def run(server_class=HTTPServer, handler_class=Data):
-    server_address = ('0.0.0.0', PORT)
+    server_address = ('128.199.8.133', PORT)
     httpd = server_class(server_address, handler_class)
     print(f"Servidor rodando na porta {PORT}")
     httpd.serve_forever()
